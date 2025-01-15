@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exotic Fruits Resource Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url('https://amazingfoodanddrink.com/wp-content/uploads/2024/07/Leonardo_Phoenix_A_vibrant_professional_photograph_showcasing_0-1-1536x1152.jpg.webp');
+            background-size: cover;
+            background-position: center;
+            
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #4CAF50;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #45a049;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
+        #home {
+            background: #f0f8ff;
+            text-align: center;
+        }
+        #introduction {
+            background: #e8f5e9;
+        }
+        #featured {
+            background: #ffebee;
+        }
+        #categories-section {
+            background: #fffde7;
+        }
+        #resources {
+            background: #e3f2fd;
+        }
+        #about {
+            background: #f3e5f5;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const links = document.querySelectorAll('.navbar a');
+
+            links.forEach(link => {
+                link.addEventListener('click', event => {
+                    event.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#introduction">Introduction</a>
+        <a href="#featured">Featured</a>
+        <a href="#categories-section">Categories</a>
+        <a href="#resources">Resources</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <section id="home">
+        <h1>Welcome to the Exotic Fruits Resource Hub</h1>
+        <p>Your go-to platform for exploring exotic fruits from tropical countries.</p>
+    </section>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Discover the unique and vibrant world of exotic fruits, packed with nutrients and bursting with flavor.</p>
+    </section>
+
+    <section id="featured">
+        <h2>Featured Fruits</h2>
+        <ul>
+            <li>Durian - The King of Fruits</li>
+            <li>Rambutan - A Sweet Delight</li>
+            <li>Dragon Fruit - Vibrant and Nutritious</li>
+        </ul>
+    </section>
+
+    <section id="categories-section">
+        <h2>Fruit Categories</h2>
+        <div id="categories">
+            <ul>
+                <li>Tropical Citrus</li>
+                <li>Berry-like Fruits</li>
+                <li>Stone Fruits</li>
+                <li>Melons and Gourds</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="resources">
+        <h2>Sample Resources</h2>
+        <ul>
+            <li><a href="https://www.healthline.com/nutrition/durian-fruit" target="_blank">Durian Nutrition Facts</a></li>
+            <li><a href="https://cookpad.com/us/search/rambutan" target="_blank">Rambutan Recipes</a></li>
+            <li><a href="https://www.thespruce.com/growing-dragonfruit-plants-5086867" target="_blank">Dragon Fruit Growing Guide</a></li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <div id="mission">
+            <p>Our mission is to educate and inspire people about the nutritional benefits and cultural significance of exotic fruits.</p>
+        </div>
+        <div id="contact">
+            <p>Contact us: <a href="mailto:info@exoticfruitshub.com">info@exoticfruitshub.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Exotic Fruits Resource Hub</p>
+    </footer>
+</body>
+</html>
