@@ -56,14 +56,23 @@
         #about {
             background: #f3e5f5;
         }
+
+        #contact-us {
+        background: rgba(0, 0, 0, 0.8); /* Added background for contrast */
+        border-radius: 10px;
+        padding: 20px;
+    }
+    #contact-us h2,
+    #contact-us p {
+        color: white;
+    }
         footer {
             text-align: center;
             padding: 10px;
             background-color: #4CAF50;
             color: white;
-            position: fixed;
-            bottom: 0;
             width: 100%;
+            margin-top: 20px;
         }
     </style>
     <script>
@@ -138,6 +147,19 @@
         </div>
         <div id="contact">
             <p>Contact us: <a href="mailto:info@exoticfruitshub.com">info@exoticfruitshub.com</a></p>
+        </div>
+    </section>
+
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or feedback, please feel free to reach out to us using the contact form below:</p>
+        <div class="contact-form">
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </section>
 
